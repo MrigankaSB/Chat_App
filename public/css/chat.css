@@ -1,0 +1,40 @@
+.jumbotron{
+    padding: 20px;
+    color: white;
+    background-color: black;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    width: 100%;
+}
+.jumbotron h1{
+    display: inline-block;
+}
+.jumbotron a{
+    float: right;
+    margin-top: 10px;
+    color: white;
+}
+body{
+    background: #3a3636;
+}
+.container{
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.main-cont{
+    background: white;
+    padding: 1em;
+    border: 2px solid rgba(95, 95, 95, 0.658);
+    border-radius: .3em;
+}
+.card-box{
+    border: 2px solid rgba(95, 95, 95, 0.658);
+}
+@media (max-width:768px){
+    #msg{
+        width: 70% !important;
+    }
+    .btn-light{
+        width: 30% !important;
+    }
+}

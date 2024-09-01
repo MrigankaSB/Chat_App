@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/chat.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="">
+
+  <title>ChatRoom App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="jumbotron">
+      <h1><i class="fas fa-comments"></i> ChatRoom</h1>
+      <a class="nav-link" href="index.html">
+        <h3>Leave</h3>
+      </a>
+    </header>
+    <main class="main-cont">
+      <div class="row">
+
+        <div class="col-sm-3"
+          style="padding: 1em;font-size: medium !important;border-bottom: 2px solid rgba(95, 95, 95, 0.658);">
+          <h5><i class="fas fa-comments"></i> Room Name:</h5>
+          <ul>
+            <li style="list-style-type: none;">
+              <h5 id="room-name"></h5>
+            </li>
+          </ul>
+          <h5><i class="fas fa-users"></i> Users</h5>
+          <ul id="users">
+
+          </ul>
+        </div>
+        <div class="col-sm-9" style="padding: 1em;border-bottom: 2px solid rgba(95, 95, 95, 0.658);">
+          <div class="chat-messages" style="height: 350px;overflow-y: scroll;">
+
+          </div>
+        </div>
+        <div class="col-12">
+          <form class="form-inline" style="padding-top: 10px;" id="chat-form">
+            <input class="form-control" style="width: 80%;" id="msg" type="text" placeholder="Enter Message" required
+              autocomplete="off" />
+            <button class="btn btn-light" style="width: 20%;"><i class="fas fa-paper-plane"></i>
+              Send</button>
+          </form>
+        </div>
+    </main>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
